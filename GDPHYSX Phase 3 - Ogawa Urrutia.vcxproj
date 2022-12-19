@@ -140,10 +140,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="control.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="texture.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Shaders\fragment.shader" />
+    <None Include="Shaders\objectFragment.shader" />
+    <None Include="Shaders\objectVertex.shader" />
+    <None Include="Shaders\vertex.shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Headers\control.h" />
+    <ClInclude Include="Headers\obj_mesh.h" />
+    <ClInclude Include="Headers\shader.h" />
+    <ClInclude Include="Headers\stb_image.h" />
+    <ClInclude Include="Headers\texture.h" />
+    <ClInclude Include="Headers\tiny_obj_loader.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
